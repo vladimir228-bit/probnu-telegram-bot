@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(name)
+logger = logging.getLogger(_name_)
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
